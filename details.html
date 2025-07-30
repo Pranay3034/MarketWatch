@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Asset Details | MarketWatch</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 min-h-screen flex flex-col">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-blue-600">📈 MarketWatch</h1>
+    <ul class="flex space-x-6">
+      <li><a href="index.html" class="hover:underline text-blue-500">Dashboard</a></li>
+      <li><a href="watchlist.html" class="hover:underline text-blue-500">Watchlist</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="p-6 max-w-5xl mx-auto w-full flex flex-col gap-6">
+    <h2 id="coin-title" class="text-3xl font-semibold text-gray-800">Loading...</h2>
+
+    <section class="bg-white p-6 rounded-lg shadow-md">
+      <canvas id="priceChart" class="w-full" height="120"></canvas>
+    </section>
+
+    <section id="coin-info" class="bg-white p-6 rounded-lg shadow-md text-sm text-gray-700 space-y-2">
+      <!-- Coin info dynamically inserted -->
+    </section>
+  </main>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
